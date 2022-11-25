@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Rick and Morty</title>
+        <style>
+            body{
+                background-image: url("BG.jpg");
+            }
+            .header{
+                background-color: black;
+                text-align: center;
+                padding: 20px;
+                color: greenyellow;
+            }
+            .main{
+                background-color: #FFFEEF;
+                margin: 50px;
+                padding:24px 36px;
+            }
+            ul{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow:hidden;
+                background-color: #333;
+            }
+            li{
+                float: left;
+            }
+            li a{
+                display:inline-block;
+                color:white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            li a:hover{
+                background-color: green;
+            }
+            .intro{
+                border-collapse: collapse;
+                width: 100%;
+                margin: 30px 0px;
+            }
+            .intro td, .intro th {
+                border: 1px solid black;
+                padding: 8px;
+            }
+            .intro tr:nth-child(even){background-color:green;}
+            .intro tr:nth-child(odd){background-color:greenyellow;}
+            .intro td:first-child{color:darkgray}
+            .image{
+                border-style: ridge;
+                border-radius: 10px;
+                float: left;
+                width: 32%;
+                padding-top:20px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+                text-align: center;
+            }
+            .clearfix::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+            .footer{
+                background-color: black;
+                margin-top: 40px;
+                padding:10px;
+                text-align: left;
+                color: lightgrey;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Rick and Morty</h1>
+            <ul>
+                <li><a class="active" href="index.html">HOME</a></li>
+                <li><a href="https://rickandmorty.fandom.com/wiki/Category:Characters" target="_blank">CHARACTERS</a></li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="https://rickandmorty.fandom.com/wiki/Category:Games" target="_blank">GAMES</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <table class="intro">
+                <tr>
+                    <th>YEAR</th>
+                    <th>SEASON</th>
+                </tr>
+                <tr>
+                    <td>2013</td>
+                    <td>season 1</td>
+                </tr>
+                <tr>
+                    <td>2015</td>
+                    <td>season 2</td>
+                </tr>
+                <tr>
+                    <td>2017</td>
+                    <td>season 3</td>
+                </tr>
+                <tr>
+                    <td>2019</td>
+                    <td>season 4</td>
+                </tr>
+                <tr>
+                    <td>2021</td>
+                    <td>season 5</td>
+                </tr>
+                <tr>
+                    <td>2022</td>
+                    <td>season 6</td>
+                </tr>
+            </table>
+            <div class="clearfix">
+                <div class="image">
+                    <img src="s1.jpg" width="300" height="480";>
+                    <P>SEASON 1</P>
+                </div>
+                <div class="image">
+                    <img src="s2.jpg" width="300" height="480";>
+                    <p>SEASON 2</p>
+                </div>
+                <div class="image">
+                    <img src="s3.jpg" width="300" height="480";>
+                    <p>SEASON 3</p>
+                </div>
+                <div class="image">
+                    <img src="s4.jpg" width="300" height="480";>
+                    <p>SEASON 4</p>
+                </div>
+                <div class="image">
+                    <img src="s5.jpg" width="300" height="480";>
+                    <p>SEASON 5</p>
+                </div>
+                <div class="image">
+                    <img src="s6.jpg" width="300" height="480";>
+                    <p>SEASON 6</p>
+                </div>
+        </div>
+        <div class="footer">
+            <p>This is a footer.</p>
+            <p>wubb lubb dub dub!</p>
+        </div>
+    </body>
+</html>
